@@ -9,5 +9,13 @@ get '/play/:option1/:option2' do
 end
 
 get '/' do
-"hello there"
+erb ( :home)
+end
+
+get '/rules' do
+  erb ( :rules)
+end
+
+get '/play' do
+  erb (:play)
 end
